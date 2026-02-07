@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Market Price Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>Market Tracker</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <h1>Local Market Price Tracker</h1>
+    <p>Track daily prices of local market products easily.</p>
+
+    <form id="priceForm">
+      <input type="text" id="product" placeholder="Product Name" required>
+      <input type="number" id="price" placeholder="Price ($)" required>
+      <button type="submit">Add Price</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="priceList"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
